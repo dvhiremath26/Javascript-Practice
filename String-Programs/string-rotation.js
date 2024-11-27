@@ -1,5 +1,5 @@
 
-/** Check if the Two Strings are Rotations of each other */
+/** WAP to check if the Two Strings are Rotations of each other */
 
 function strRotation(str1, str2) {
     if(str1.length !== str2.length) {
