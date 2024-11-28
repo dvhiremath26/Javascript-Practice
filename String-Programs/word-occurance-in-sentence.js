@@ -6,11 +6,13 @@ function wordOcuurance(str) {
     let occurance = {};
 
     for(let word of words) {
-        if(occurance[word]) {
-            occurance[word]++;
-        } else {
-            occurance[word] = 1;
-        }
+        occurance[word] = (occurance[word] || 0) + 1;
+        
+        // if(occurance[word]) {
+        //     occurance[word]++;
+        // } else {
+        //     occurance[word] = 1;
+        // }
     }
 
     console.log("Occurance of words in the givem sentence: \n", occurance);

@@ -12,6 +12,7 @@ function armstrongNumber(num) {
     for(let digit of num.toString()) {
         let numDigit = Number(digit);
         sum += Math.pow(numDigit, 3);
+        // sum += numDigit * numDigit * numDigit;
     }
 
     if(num === sum) {
